@@ -37,7 +37,7 @@ const Task = () => {
    }
  
    const deteleTask = (id) => {
-     setDoneList([...doneList, taskList.filter(task => task.id == id)]);
+     setDoneList([...doneList, taskList.find(task => task.id == id)]);
      //setDoneList(taskList.filter(task => task.id == id));
      setTaskList(taskList.filter(task => task.id !== id));
    }
